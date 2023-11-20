@@ -1,20 +1,19 @@
+/*calcular  a media de notas dp semestre...  problemas da nossa vida real*/
+const nota1 = 8;
+const nota2 = 7;
+const nota3 = 7;
+const media = (nota1 + nota2 + nota3) / 3;
 
-/*calcular o valor de combustivel gasto em uma viagem  problema da nossa vida real*/
-const precoEtanol = 5.79;
-const precoGasolina = 6.77;
-const kmporLitros = 12;
-const distanciaKM = 1580;
-const tipoCombustivel= 'Etanol';
+console.log(media);
 
-const litrosConsumidos = distanciaKM / kmporLitros;
-
-if (tipoCombustivel === 'Etanol') {
-    const valorgasto = litrosConsumidos * precoEtanol;
-    console.log (valorgasto.toFixed(2));
+if (media < 5) {
+  console.log('reprovado');
 }
 
-else {
-    const valorgasto = litrosConsumidos * precoGasolina;
-    console.log (valorgasto.toFixed(2));
-};
+else if (media >= 5 && media <=7) {
+    console.log('recuperacao');
+}
 
+else  {
+    console.log ('passou no semestre');
+};
