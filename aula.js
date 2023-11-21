@@ -1,22 +1,19 @@
-/*calcular  o imc de um adulto...  problemas da nossa vida real*/
-const peso = 60;
-const altura  = 1.70;
-const imc = peso / Math.pow(altura,2);
+/*calcular  o valor pago de um produto...  problemas da nossa vida real*/
+const precoEtiqueta = 100;
+const formadePagamento  = 4;
 
-console.log(imc);
 
-if(imc < 18.5) {
-  console.log('Abaixo do Peso');
+if(formadePagamento === 1) {
+  console.log(precoEtiqueta - (precoEtiqueta * 0.1));
 }
-else if (imc >= 18.5 && imc <= 24.9){
-  console.log('Peso Ideal');
-}
-else if (imc > 24.9 && imc <= 29.9){
-  console.log('Acima do Peso');
-}
-else if (imc > 30.0 && imc <= 39.9){
-  console.log('obeso');
-}
-else{
-  console.log('Obesidade grave');
-}
+else if (formadePagamento === 2) {
+  console.log(precoEtiqueta - (precoEtiqueta * 0.15));
+ }
+
+ else if (formadePagamento === 3) {
+  console.log(precoEtiqueta );
+ }
+ else {
+  console.log(precoEtiqueta + (precoEtiqueta * 0.1));
+  
+ }
